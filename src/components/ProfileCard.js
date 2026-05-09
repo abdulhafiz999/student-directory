@@ -12,20 +12,20 @@ function ProfileCard({ student, onToggleActive }) {
           <span className="status inactive">Inactive</span>
         )}
       </div>
-      
+
       <div className="card-body">
         <p className="track"><strong>Track:</strong> {student.track}</p>
         <p className="bio">{student.bio}</p>
         <p className="skill-level">
-          <strong>Skill Level:</strong> 
+          <strong>Skill Level:</strong>
           <span className={`skill-badge ${student.skillLevel.toLowerCase()}`}>
             {student.skillLevel}
           </span>
         </p>
       </div>
-      
+
       <div className="card-footer">
-        <button 
+        <button
           className="toggle-btn"
           onClick={() => onToggleActive(student.id)}
         >
